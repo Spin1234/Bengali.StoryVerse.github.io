@@ -57,5 +57,41 @@
     ],
     "featured": false,
     "description": "গোপাল ভাঁড়ের বুদ্ধি আর রসিকতায় এক অসম্ভব রাজকীয় সমস্যার মজার সমাধান।"
+  },
+  {
+    "id": "story-003",
+    "title": "চায়ের দোকানের ভূতের গল্প",
+    "subtitle": "রাজসভায় এমন বিচার এর আগে কেউ দেখেনি।",
+    "category": "ghost",
+    "date": "2026-08-18",
+    "thumbnail": "thumbnails/story-002.jfif",
+    "story": "stories/story-003.json",
+    "tags": ["গোপাল ভাঁড়", "হাসির গল্প"],
+    "searchTerms": [
+      "গোপাল ভাঁড়",
+      "গোপাল ভাঁড়ের গল্প",
+      "গোপাল ভাঁড়ের হাসির গল্প",
+      "গোপাল ভাঁড়ের বুদ্ধির গল্প",
+      "গোপাল ভাঁড়ের বিচার",
+      "গোপাল ভাঁড়ের কৌতুক",
+      "রাজা কৃষ্ণচন্দ্র",
+      "রাজসভা",
+      "বাংলা হাসির গল্প",
+      "মজার গল্প",
+      "বুদ্ধির গল্প",
+      "বাংলার লোককথা",
+      "গোপাল ভাঁড়ের নতুন গল্প",
+      "gopal bhar",
+      "gopal bhar er golpo",
+      "gopal bharer golpo",
+      "gopal bhar comedy",
+      "bengali funny story",
+      "bengali comedy story",
+      "bangla hasir golpo",
+      "bangla funny story",
+      "folk tale"
+    ],
+    "featured": false,
+    "description": "গোপাল ভাঁড়ের বুদ্ধি আর রসিকতায় এক অসম্ভব রাজকীয় সমস্যার মজার সমাধান।"
   }
 ]
