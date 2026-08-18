@@ -1,0 +1,61 @@
+[
+  {
+    "id": "story-001",
+    "title": "বটতলার শেষ রাত",
+    "subtitle": "সেই রাতের পর গ্রামের কেউ আর বটগাছটার নিচে একা যায়নি।",
+    "category": "ghost",
+    "date": "2026-08-18",
+    "thumbnail": "thumbnails/story-001.png",
+    "story": "stories/story-001.json",
+    "tags": ["ভূতের গল্প", "গ্রামবাংলা", "রহস্য"],
+    "searchTerms": [
+        "ভূত",
+        "ভূতের গল্প",
+        "বটগাছ",
+        "গ্রামবাংলা",
+        "bhoot",
+        "bhoot er golpo",
+        "ghost",
+        "horror",
+        "village horror"
+    ],
+    "featured": true,
+    "description": "বর্ষার শেষ রাতে গ্রামের পুরনো বটতলায় ঘটে যাওয়া এক অদ্ভুত ঘটনার গল্প।"
+  },
+  {
+    "id": "story-002",
+    "title": "গোপাল ভাঁড়ের উল্টো বিচার",
+    "subtitle": "রাজসভায় এমন বিচার এর আগে কেউ দেখেনি।",
+    "category": "funny",
+    "date": "2026-08-18",
+    "thumbnail": "thumbnails/story-002.jfif",
+    "story": "stories/story-002.json",
+    "tags": ["গোপাল ভাঁড়", "হাসির গল্প"],
+    "searchTerms": [
+      "গোপাল ভাঁড়",
+      "গোপাল ভাঁড়ের গল্প",
+      "গোপাল ভাঁড়ের হাসির গল্প",
+      "গোপাল ভাঁড়ের বুদ্ধির গল্প",
+      "গোপাল ভাঁড়ের বিচার",
+      "গোপাল ভাঁড়ের কৌতুক",
+      "রাজা কৃষ্ণচন্দ্র",
+      "রাজসভা",
+      "বাংলা হাসির গল্প",
+      "মজার গল্প",
+      "বুদ্ধির গল্প",
+      "বাংলার লোককথা",
+      "গোপাল ভাঁড়ের নতুন গল্প",
+      "gopal bhar",
+      "gopal bhar er golpo",
+      "gopal bharer golpo",
+      "gopal bhar comedy",
+      "bengali funny story",
+      "bengali comedy story",
+      "bangla hasir golpo",
+      "bangla funny story",
+      "folk tale"
+    ],
+    "featured": false,
+    "description": "গোপাল ভাঁড়ের বুদ্ধি আর রসিকতায় এক অসম্ভব রাজকীয় সমস্যার মজার সমাধান।"
+  }
+]

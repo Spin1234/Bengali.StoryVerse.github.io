@@ -1,0 +1,665 @@
+:root {
+  --bg: #f7f3ea;
+  --paper: #fffdf8;
+  --ink: #25251f;
+  --muted: #77736a;
+  --line: #e5dfd3;
+  --accent: #8d4b31;
+  --green: #354c3d;
+  --shadow: 0 18px 55px rgba(45, 36, 24, 0.1);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Noto Sans Bengali", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font: inherit;
+  cursor: pointer;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #f7f3eadd;
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid #8d806014;
+}
+.header-inner {
+  height: 76px;
+  max-width: 1240px;
+  margin: auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1;
+}
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+  background: var(--green);
+  color: #f7f3ea;
+  display: grid;
+  place-items: center;
+  font: 700 22px "Noto Serif Bengali";
+}
+.brand b,
+.brand strong {
+  display: block;
+}
+.brand b {
+  font: 700 10px Arial;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+.brand strong {
+  font-size: 18px;
+}
+nav {
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  color: #5f5c54;
+}
+nav a:hover {
+  color: var(--accent);
+}
+.actions {
+  display: flex;
+  gap: 6px;
+}
+.actions button,
+.reader-head button {
+  border: 0;
+  background: transparent;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 21px;
+  color: #4e4a42;
+}
+.actions button:hover,
+.reader-head button:hover {
+  background: #ebe5d9;
+}
+.hero {
+  max-width: 1240px;
+  margin: auto;
+  padding: 75px 28px;
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 65px;
+  align-items: center;
+  min-height: 640px;
+}
+.eyebrow {
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+.hero h1 {
+  font: 700 clamp(44px, 5.3vw, 74px) / 1.15 "Noto Serif Bengali";
+  letter-spacing: -2.5px;
+  margin: 17px 0 22px;
+}
+.hero h1 em {
+  color: var(--accent);
+  font-style: normal;
+}
+.hero p {
+  max-width: 570px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.9;
+}
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+.primary,
+.secondary {
+  border-radius: 999px;
+  padding: 13px 20px;
+  font-weight: 700;
+}
+.primary {
+  border: 0;
+  background: var(--green);
+  color: #fff;
+}
+.secondary {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+}
+.hero-art {
+  height: 500px;
+  border-radius: 35px;
+  background: linear-gradient(145deg, #263a2e, #101713);
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+.moon {
+  position: absolute;
+  right: 90px;
+  top: 75px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e2c98f;
+  box-shadow: 0 0 80px #e2c98f44;
+}
+.hero-art:after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  height: 260px;
+  background: #090d0b;
+  clip-path: polygon(
+    0 100%,
+    13% 67%,
+    23% 75%,
+    31% 38%,
+    40% 67%,
+    52% 23%,
+    62% 67%,
+    75% 46%,
+    86% 72%,
+    100% 55%,
+    100% 100%
+  );
+}
+.hero-story {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  bottom: 30px;
+  width: calc(100% - 60px);
+  padding: 23px;
+  border: 1px solid #fff2;
+  border-radius: 22px;
+  background: #161c18c9;
+  backdrop-filter: blur(14px);
+  color: #fff;
+}
+.hero-story small {
+  color: #d7c49e;
+  letter-spacing: 1.5px;
+}
+.hero-story h2 {
+  font: 700 30px "Noto Serif Bengali";
+  margin: 7px 0;
+}
+.hero-story p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #d3d5cf;
+  margin: 0;
+}
+.hero-story span {
+  font-size: 11px;
+  color: #c5c8c0;
+}
+.section {
+  max-width: 1240px;
+  margin: auto;
+  padding: 65px 28px;
+}
+.section-head {
+  margin-bottom: 28px;
+}
+.section-head h2 {
+  font: 700 35px "Noto Serif Bengali";
+  margin: 5px 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.25s;
+  position: relative;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+.card img {
+  width: 100%;
+  aspect-ratio: 1.55;
+  object-fit: cover;
+  display: block;
+}
+.card-body {
+  padding: 17px 18px 20px;
+}
+.cat {
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.card h3 {
+  font: 700 22px/1.35 "Noto Serif Bengali";
+  margin: 7px 0;
+}
+.card p {
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  color: #89867c;
+  font-size: 10px;
+}
+.save-card {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border: 1px solid #fff5;
+  background: #111b9c;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  z-index: 3;
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.cat-card {
+  background: #eee8dc;
+  border: 1px solid #e1d9cb;
+  border-radius: 20px;
+  padding: 22px 18px;
+  min-height: 150px;
+}
+.cat-card .icon {
+  font-size: 27px;
+  color: var(--accent);
+}
+.cat-card h3 {
+  font: 700 18px "Noto Serif Bengali";
+  margin: 10px 0 4px;
+}
+.cat-card p {
+  font-size: 11px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+.empty {
+  padding: 42px;
+  border: 1px dashed #d7cec0;
+  border-radius: 20px;
+  text-align: center;
+  color: var(--muted);
+}
+footer {
+  max-width: 1240px;
+  margin: auto;
+  border-top: 1px solid var(--line);
+  padding: 45px 28px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: var(--muted);
+  font-size: 12px;
+}
+footer small {
+  margin-left: auto;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: #181712aa;
+  backdrop-filter: blur(12px);
+  z-index: 100;
+  padding: 70px 15px;
+}
+.overlay.open {
+  display: block;
+}
+.searchbox {
+  position: relative;
+  max-width: 750px;
+  margin: auto;
+  background: var(--paper);
+  border-radius: 25px;
+  padding: 30px;
+}
+.searchbox > button {
+  position: absolute;
+  right: 17px;
+  top: 12px;
+  border: 0;
+  background: transparent;
+  font-size: 29px;
+}
+.searchbox h2 {
+  font: 700 31px "Noto Serif Bengali";
+}
+.searchbox input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  outline: 0;
+  background: transparent;
+}
+.result {
+  display: flex;
+  gap: 13px;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+.result img {
+  width: 90px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.result h3 {
+  font: 700 17px "Noto Serif Bengali";
+  margin: 0;
+}
+.result p {
+  font-size: 10px;
+  color: var(--muted);
+}
+body.dark {
+  --bg: #111411;
+  --paper: #191c19;
+  --ink: #eee9df;
+  --muted: #aaa69d;
+  --line: #30332e;
+}
+body.dark header {
+  background: #111411e8;
+}
+body.dark .cat-card {
+  background: #20241f;
+  border-color: #30342e;
+}
+.reader-head {
+  height: 70px;
+  max-width: none;
+  padding: 0 max(18px, calc((100% - 1050px) / 2));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reader-main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 45px 25px 90px;
+}
+.back {
+  font-size: 12px;
+  color: var(--muted);
+}
+article {
+  max-width: 760px;
+  margin: 55px auto;
+}
+.story-meta {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+.reader article h1 {
+  font: 700 clamp(42px, 6vw, 68px) / 1.15 "Noto Serif Bengali";
+  letter-spacing: -2px;
+  margin: 18px 0;
+}
+.subtitle {
+  font: 400 19px/1.8 "Noto Serif Bengali";
+  color: var(--muted);
+}
+.byline {
+  border-bottom: 1px solid var(--line);
+  padding: 15px 0 25px;
+  color: #89857a;
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+}
+.story-body {
+  font: 400 19px/2.05 "Noto Serif Bengali";
+  margin-top: 42px;
+}
+.story-body p {
+  margin: 0 0 27px;
+}
+.ending {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  color: var(--accent);
+  margin: 70px 0;
+  font-size: 14px;
+}
+.ending span {
+  color: var(--muted);
+}
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 100;
+}
+.progress i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--accent);
+}
+#panel {
+  position: fixed;
+  right: 20px;
+  top: 82px;
+  width: 300px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: none;
+  z-index: 60;
+}
+#panel.open {
+  display: block;
+}
+#panel > b {
+  font-size: 14px;
+}
+#panel > #x {
+  float: right;
+  border: 0;
+  background: transparent;
+  font-size: 24px;
+}
+#panel hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 17px 0;
+}
+#panel label {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin: 14px 0 7px;
+}
+#panel div {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+#panel div button {
+  border: 1px solid var(--line);
+  background: transparent;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+.reader[data-theme="sepia"] {
+  --bg: #efe3ca;
+  --paper: #f7eedb;
+  --ink: #3b3024;
+  --muted: #786b5b;
+  --line: #dac9ac;
+}
+.reader[data-theme="dark"] {
+  --bg: #111411;
+  --paper: #191c19;
+  --ink: #eee9df;
+  --muted: #aaa69d;
+  --line: #30332e;
+}
+.reader {
+  background: var(--bg);
+  color: var(--ink);
+}
+.reader-head {
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(15px);
+}
+
+.load-more {
+    display: block;
+    margin: 32px auto 10px;
+    padding: 12px 28px;
+    border: 0;
+    border-radius: 999px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  
+  .load-more:hover {
+    transform: translateY(-2px);
+  }
+  
+  .load-more:active {
+    transform: translateY(0);
+  }
+
+  
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 620px) {
+  .header-inner {
+    padding: 0 16px;
+  }
+  .hero {
+    padding: 45px 17px;
+    gap: 35px;
+  }
+  .hero h1 {
+    font-size: 43px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-art {
+    height: 390px;
+  }
+  .section {
+    padding: 48px 17px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .cat-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cat-card {
+    min-height: 135px;
+    padding: 17px;
+  }
+  .section-head h2 {
+    font-size: 29px;
+  }
+  footer {
+    padding: 35px 17px;
+    display: block;
+  }
+  footer small {
+    display: block;
+    margin: 18px 0;
+  }
+  .reader-main {
+    padding: 30px 17px;
+  }
+  .reader article {
+    margin-top: 40px;
+  }
+  .reader article h1 {
+    font-size: 42px;
+  }
+  .story-body {
+    font-size: 18px;
+  }
+  .reader-head {
+    padding: 0 15px;
+  }
+  #panel {
+    left: 15px;
+    right: 15px;
+    width: auto;
+  }
+}

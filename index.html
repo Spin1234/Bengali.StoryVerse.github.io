@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bengali StoryVerse — বাংলা গল্পের জগৎ</title>
+    <meta
+      name="description"
+      content="Bengali StoryVerse — বাংলা ভৌতিক, রহস্য, অ্যাডভেঞ্চার ও হাসির গল্প পড়ুন।"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="icons/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html"
+          ><span class="brand-mark">গ</span
+          ><span><b>Bengali</b><strong>StoryVerse</strong></span></a
+        >
+        <nav>
+          <a href="#latest">নতুন গল্প</a><a href="#categories">বিভাগ</a
+          ><a href="#bookmarks">সংরক্ষিত</a>
+        </nav>
+        <div class="actions">
+          <button id="searchOpen">⌕</button><button id="theme">☾</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">বাংলা গল্পের নতুন ঠিকানা</span>
+          <h1>একটা গল্প খুলুন,<br /><em>অন্য এক জগতে</em> চলে যান।</h1>
+          <p>
+            ভূতের রাত, গ্রামবাংলা, হাসির গল্প, রহস্য আর রোমাঞ্চ—মন দিয়ে পড়ার
+            মতো বাংলা গল্প এক জায়গায়।
+          </p>
+          <div class="hero-actions">
+            <button class="primary" id="featured">আজকের গল্প পড়ুন →</button
+            ><button class="secondary" id="random">🎲 যেকোনো গল্প</button>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="moon"></div>
+          <div class="hero-story">
+            <small>আজকের গল্প</small>
+            <h2 id="heroTitle">বটতলার শেষ রাত</h2>
+            <p id="heroSub"></p>
+            <span id="heroMeta"></span>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="latest">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">এখন পড়া যায়</span>
+            <h2>নতুন গল্প</h2>
+          </div>
+        </div>
+        <div class="grid" id="latestGrid"></div>
+
+        <div class="load-more-wrap">
+            <button id="loadMoreStories" class="load-more">
+              আরও গল্প দেখুন
+            </button>
+          </div>
+      </section>
+      <section class="section" id="categories">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">আপনার মনের মতো</span>
+            <h2>গল্পের বিভাগ</h2>
+          </div>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+      </section>
+      <section class="section" id="bookmarks">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">পরে পড়বেন</span>
+            <h2>সংরক্ষিত গল্প</h2>
+          </div>
+        </div>
+        <div class="grid" id="savedGrid"></div>
+        <div id="empty" class="empty">এখনও কোনো গল্প সংরক্ষণ করা হয়নি।</div>
+      </section>
+    </main>
+    <footer>
+      <div class="brand">
+        <span class="brand-mark">গ</span
+        ><span><b>Bengali</b><strong>StoryVerse</strong></span>
+      </div>
+      <p>গল্প পড়ার জন্য তৈরি একটি শান্ত, সুন্দর জায়গা।</p>
+      <small>© 2026 Bengali StoryVerse</small>
+    </footer>
+    <div class="overlay" id="overlay">
+      <div class="searchbox">
+        <button id="close">×</button><span class="eyebrow">গল্প খুঁজুন</span>
+        <h2>কোন গল্পটি পড়বেন?</h2>
+        <input id="search" placeholder="গল্পের নাম, বিভাগ বা বিষয়..." />
+        <div id="results"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

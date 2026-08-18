@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ghost",
+    "name": "গ্রাম বাংলার ভূতের গল্প",
+    "icon": "◉",
+    "description": "গ্রামবাংলা, অন্ধকার রাত, পুরনো বাড়ি আর অজানা উপস্থিতির গল্প।",
+    "searchTerms": [
+        "ভৌতিক",
+        "ভূত",
+        "ভূতের গল্প",
+        "bhoot",
+        "bhoot er golpo",
+        "ghost",
+        "ghost story",
+        "horror",
+        "horror story"
+      ]
+  },
+  {
+    "id": "funny",
+    "name": "হাসির গল্প",
+    "icon": "☺",
+    "description": "মজার ঘটনা আর বুদ্ধির খেলায় ভরা গল্প।",
+    "searchTerms": [
+      "হাসির গল্প",
+      "মজার গল্প",
+      "funny",
+      "funny story",
+      "comedy",
+      "gopal bhar",
+      "gopal bhand",
+      "comics",
+      "comic story"
+    ]
+  },
+  {
+    "id": "adventure",
+    "name": "অ্যাডভেঞ্চার",
+    "icon": "◇",
+    "description": "অজানা পথ, বিপদ আর রোমাঞ্চকর অভিযান।",
+    "searchTerms": [
+        "অ্যাডভেঞ্চার",
+        "অভিযান",
+        "adventure",
+        "adventure story",
+        "exploration"
+      ]
+  },
+  {
+    "id": "mystery and thrill",
+    "name": "রহস্য",
+    "icon": "⌕",
+    "description": "শেষ পাতা পর্যন্ত লুকিয়ে থাকা রহস্য।"
+  },
+  {
+    "id": "suspense",
+    "name": "সাসপেন্স",
+    "icon": "◐",
+    "description": "টানটান উত্তেজনা আর শেষ মুহূর্তের মোড়।"
+  }
+]

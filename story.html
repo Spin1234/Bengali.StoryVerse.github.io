@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>গল্প — Bengali StoryVerse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icons/favicon.svg" />
+  </head>
+  <body class="reader">
+    <div class="progress"><i id="bar"></i></div>
+    <header class="reader-head">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">গ</span
+        ><span><b>Bengali</b><strong>StoryVerse</strong></span></a
+      >
+      <div>
+        <button id="save">♡</button><button id="settings">Aa</button
+        ><button id="readerTheme">☾</button>
+      </div>
+    </header>
+    <main class="reader-main">
+      <a class="back" href="index.html">← সব গল্পে ফিরে যান</a>
+      <article>
+        <div class="story-meta" id="meta"></div>
+        <h1 id="title"></h1>
+        <p class="subtitle" id="subtitle"></p>
+        <div class="byline">✦ Bengali StoryVerse <span id="date"></span></div>
+        <div class="story-body" id="body"></div>
+        <div class="ending">✦ <span>গল্পটি এখানেই শেষ।</span> ✦</div>
+      </article>
+    </main>
+    <aside id="panel">
+      <b>পাঠের সেটিংস</b><button id="x">×</button>
+      <hr />
+      <label>লেখার আকার</label>
+      <div>
+        <button id="minus">A−</button><span id="size">100%</span
+        ><button id="plus">A+</button>
+      </div>
+      <label>থিম</label>
+      <div>
+        <button data-t="light">দিন</button
+        ><button data-t="sepia">সেপিয়া</button
+        ><button data-t="dark">রাত</button>
+      </div>
+    </aside>
+    <script src="reader.js"></script>
+  </body>
+</html>
