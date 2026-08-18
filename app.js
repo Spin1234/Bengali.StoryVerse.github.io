@@ -199,7 +199,7 @@ function render() {
   });
 
   // Latest story becomes hero
-  const f = sorted[0];
+  const f = stories.find((x) => x.featured) || sorted[0];
 
   if (f) {
     $("#heroTitle").textContent = f.title;
