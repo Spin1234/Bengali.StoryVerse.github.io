@@ -334,13 +334,13 @@
   ]
 },
 {
-"id": "story-002",
+"id": "story-009",
 "title": "নীল কুয়াশার ওপারে",
 "subtitle": "মানচিত্রে যে দ্বীপের অস্তিত্ব নেই, সেখানে পৌঁছানোর পর অরিন্দম বুঝেছিল—ফিরে আসার পথটাও কেউ মুছে দিয়েছে।",
 "category": "adventure",
 "date": "2026-08-25",
-"thumbnail": "thumbnails/story-002.png",
-"story": "stories/story-002.json",
+"thumbnail": "thumbnails/story-009.png",
+"story": "stories/story-009.json",
 "tags": [
 "অ্যাডভেঞ্চার",
 "রহস্য",
