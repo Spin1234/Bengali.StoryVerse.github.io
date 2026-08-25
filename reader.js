@@ -69,27 +69,59 @@ $("#readerTheme").onclick = () => {
 };
 let rt = localStorage.getItem("bsv_reader_theme") || "light";
 document.querySelector(".reader").dataset.theme = rt;
+
+// async function init() {
+//   let meta = await fetch("data/stories.json").then((r) => r.json()),
+//     s = meta.find((x) => x.id === id);
+//   if (!s) {
+//     location.href = "index.html";
+//     return;
+//   }
+//   let body = await fetch(s.story).then((r) => r.json());
+//   const readTime = calculateReadTime(body.paragraphs);
+//   document.title = s.title + " — Bengali StoryVerse";
+//   $("#meta").textContent =
+//     s.category + " • " + readTime + " মিনিট পড়তে সময়";
+//   $("#title").textContent = s.title;
+//   $("#subtitle").textContent = s.subtitle;
+//   $("#date").textContent = s.date;
+//   $("#body").innerHTML = body.paragraphs
+//     .map((p) => `<p>${esc(p)}</p>`)
+//     .join("");
+//   updateSave();
+//   fs();
+// }
+
+
 async function init() {
-  let meta = await fetch("data/stories.json").then((r) => r.json()),
-    s = meta.find((x) => x.id === id);
-  if (!s) {
-    location.href = "index.html";
-    return;
+  try {
+    let meta = await fetch("data/stories.json").then((r) => r.json()),
+      s = meta.find((x) => x.id === id);
+
+    if (!s) {
+      $("#title").textContent = "গল্পটি পাওয়া যায়নি (Story Not Found)";
+      $("#body").innerHTML = "<p>অনুরোধ করা গল্পটি পাওয়া যায়নি।</p>";
+      return;
+    }
+
+    let body = await fetch(s.story).then((r) => r.json());
+    const readTime = calculateReadTime(body.paragraphs);
+    document.title = s.title + " — Bengali StoryVerse";
+    $("#meta").textContent = s.category + " • " + readTime + " মিনিট পড়তে সময়";
+    $("#title").textContent = s.title;
+    $("#subtitle").textContent = s.subtitle;
+    $("#date").textContent = s.date;
+    $("#body").innerHTML = body.paragraphs
+      .map((p) => `<p>${esc(p)}</p>`)
+      .join("");
+    updateSave();
+    fs();
+  } catch (e) {
+    $("#title").textContent = "Error loading story";
   }
-  let body = await fetch(s.story).then((r) => r.json());
-  const readTime = calculateReadTime(body.paragraphs);
-  document.title = s.title + " — Bengali StoryVerse";
-  $("#meta").textContent =
-    s.category + " • " + readTime + " মিনিট পড়তে সময়";
-  $("#title").textContent = s.title;
-  $("#subtitle").textContent = s.subtitle;
-  $("#date").textContent = s.date;
-  $("#body").innerHTML = body.paragraphs
-    .map((p) => `<p>${esc(p)}</p>`)
-    .join("");
-  updateSave();
-  fs();
 }
+
+
 window.onscroll = () => {
   let d = document.documentElement,
     p = d.scrollTop / (d.scrollHeight - d.clientHeight);
